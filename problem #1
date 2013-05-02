@@ -1,0 +1,33 @@
+# This is the function which, if uncommented, will print out a list
+# of primes of after receiving an input of a, b, and n. The length
+# will be n, a and b are coefficients in the quadratic equation
+# this will also print the length of y, the number of primes in this set
+
+def quadeqpr(a,b,n): 
+    y = [(x^2+a*x+b) for x in [1,2,..,n] if is_prime(x^2+a*x+b)]
+    #print y
+    print len(y)
+
+quadeqpr(6,18,100)
+
+quadeqpr(6,18,1000)
+
+quadeqpr(6,18,10000)
+
+quadeqpr(7,5,100)
+
+quadeqpr(7,5,1000)
+
+quadeqpr(7,5,10000)
+
+quadeqpr(7,5,100000)
+
+quadeqpr(15,7,100)
+
+quadeqpr(15,7,1000)
+
+quadeqpr(15,7,100000)
+
+quadeqpr(15,4,1000)
+
+quadeqpr(25,4,1000)
