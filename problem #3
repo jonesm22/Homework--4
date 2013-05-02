@@ -1,0 +1,9 @@
+m = continued_fraction(0.13869616280169693)
+show(m)
+print convergents(m)
+n = Mod(1234567*372806624339965, 37+10^15)
+d = Mod(372806624339965*8901234, 37+10^15)
+print n
+print d
+
+The rational number you are looking for is 1234567/8901234
